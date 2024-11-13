@@ -1,0 +1,113 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7/11/2024, 06:54:44 PM
+    Author     : samuel Niño
+*/
+.h2{
+    color:whitesmoke;
+ }
+ /* Botón de menú */
+ /* Botón de menú */
+ .menu-btn {
+     font-size: 1.5rem;
+     padding: 10px;
+     position: fixed;
+     top: 10px;
+     left: 10px;
+     z-index: 1001;
+     background-color: #1e88e5;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: transform 0.3s;
+ }
+ .menu-btn:hover {
+     transform: scale(1.1);
+ }
+ 
+ /* Barra lateral oculta */
+ .barra-lateral {
+     width: 250px;
+     background-color: rgba(0, 0, 0, 0.85);
+     color: white;
+     padding: 20px;
+     position: fixed;
+     left: -250px; /* Oculta la barra hacia la izquierda */
+     top: 0;
+     bottom: 0;
+     transition: left 0.4s ease;
+     overflow-y: auto;
+ }
+    
+ /* Barra lateral cuando está visible */
+ .barra-lateral.visible {
+     left: 0; /* Muestra la barra */
+ }
+ 
+ .barra-lateral h2 {
+     color: #ffeb3b; /* Color amarillo brillante */
+     font-size: 1.4rem;
+     margin-bottom: 15px;
+ }
+ 
+ .barra-lateral ul {
+     list-style: none;
+     padding: 0;
+ }
+ 
+ .barra-lateral ul li {
+     margin: 10px 0;
+ }
+ 
+ .barra-lateral ul li a {
+     color: #64b5f6; /* Azul claro */
+     text-decoration: none;
+     font-size: 1rem;
+ }
+ 
+ .barra-lateral ul li a:hover {
+     text-decoration: underline;
+     color: #ffeb3b; /* Efecto hover en amarillo */
+ }
+ /* Estilos para el pie de página */
+ .footer {
+     background-color: #1e88e5; /* Azul oscuro */
+     color: white;
+     padding: 10px;
+     text-align:center;
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+     font-size: 0.9rem;
+ }
+ 
+ .footer-contenido {
+     max-width: 1200px;
+     margin: 0 auto;
+ }
+ 
+ .footer p {
+     margin: 10px 0;
+ }
+ 
+ .footer-nav {
+     margin-top: 10px;
+ }
+ 
+ .footer-nav a {
+     color: #ffeb3b; /* Color amarillo */
+     margin: 0 15px;
+     text-decoration: none;
+     font-weight: bold;
+ }
+ 
+ .footer-nav a:hover {
+     text-decoration: underline;
+     color: #ffe082; /* Color amarillo claro */
+ }
+ 
